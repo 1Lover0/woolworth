@@ -1,38 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './Navbar.css'
+import { assests } from '../../assets/assest';
 
 const Navbar = () => {
+    const [toggle, setToggler] = useState("navbar-dropdown")
     return (
-        <div className='navbar navbar-expand-sm'>
-            <div className="container-fluid">
-                <a href='#' className="navbar-brand">
-                    Logo
-                </a>
-                <div className="collapse navbar-collapse">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a href="#" className="nav-link ">Everday & Other Services</a>
-                        </li>
-                        <li className="nav-item nav-search">
-                            <input type="search" className='' placeholder='Search products, recipes & ideas' />
-                        </li>
-                        <li className="nav-item">
-                            <img src="" alt="" />
-                            <div>
-                                <p>Lists &</p>
-                                <p>Buy again</p>
-                            </div>
-                        </li>
-                        <li className="nav-item">
-                            <img src="" alt="" />
-                            <div>
-                                <p>Log in or Sign up</p>
-                                <p>My Account</p>
-                            </div>
-                        </li>
-                        <li className='nav-item'>
-                            <img src="" alt="" /> $0.00
-                        </li>
-                    </ul>
+        <div className="navbar">
+            <div className='navbar-left'>
+                <div className="logo">
+                    <img src={assests.newLogo} alt="" />
+                </div>
+                <div className="border"></div>
+                <div className='navbar-dropdown'>
+                    Everyday & Other Services
+                </div>
+            </div>
+            <div className="navbar-center">
+                <div className="navbar-search-box">
+                    <input type="search" placeholder='Search products, recipes & ideas' />
+                </div>
+            </div>
+            <div className="navbar-right">
+                <div className="navbar-list">
+                    <div className='navbar-list-img'>
+                        <img src={assests.list} alt="" />
+                    </div>
+                    <div className='navbar-list-content'>
+                        <p className='navbar-small'>Lists</p>
+                        <p className='navbar-big'>Buy again</p>
+                    </div>
+                </div>
+                <div className="navbar-account">
+                    <div className='navbar-account-img'>
+                        <img src={assests.profile1} alt="" />
+                    </div>
+                    <div className='navbar-account-content'>
+                        <p className='navbar-small'>Log in or Sign up</p>
+                        <p className='navbar-big'>My Account</p>
+                    </div>
+                </div>
+                <div className="navbar-cart">
+                    <img src={assests.cart} alt="" /> <span>$0.00</span>
                 </div>
             </div>
         </div>
