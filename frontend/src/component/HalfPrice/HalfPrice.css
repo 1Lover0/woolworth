@@ -1,0 +1,74 @@
+.half-price{
+    padding: 50px 100px;
+}
+
+
+.half-price-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.half-price-item{
+    padding: 10px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 10px;
+}
+.half-price-item-img{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.half-price-item-img .front{
+    height: 170px;
+}
+.half-price-item-img .offer{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+}
+.item-price{
+    margin: 10px 0;
+}
+.item-price .offer-off{
+    background-color: #ffc906;
+    padding: 3px 5px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.item-price .price{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+.item-price .add-details{
+    font-size: 14px;
+}
+.half-price-item .caption{
+    font-size: 15px;
+}
+
+.half-price-item-btn{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.half-price-item-btn .btn-1 , .half-price-item-btn .btn-2{
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.half-price-item-btn .btn-1 {
+    background-color: green;
+    color: white;
+    outline: none;
+    border: none;
+}
+.half-price-item-btn .btn-1:hover{
+    background-color: rgb(2, 86, 2);
+}
+.half-price-item-btn .btn-2:hover{
+    background-color: rgb(212, 212, 212);
+}

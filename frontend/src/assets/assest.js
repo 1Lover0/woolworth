@@ -29,6 +29,9 @@ import spe from './ssnh/sp.webp';
 import mydeals from './ssnh/myDeal.webp';
 
 import special from './special.webp'
+import hPrice from './half-price.webp'
+
+// import dogFood1 from './dogFood.avif'
 
 
 
@@ -54,7 +57,8 @@ export const assests = {
     seafood_Pic,
     seafood,
     bigw,Everyday_market,health,mydeals,spe,super_deals,
-    special,
+    special,hPrice,
+    // dogFood1,
 }
 
 export const greatValue = [
@@ -84,7 +88,7 @@ export const greatValue = [
     },
     {
         "id":5,
-        "desc":"Enjoy big value on big brands",
+        "desc":"Enjoy big value on big brands with cashback ",
         "img":seafood_Pic,
         "imgback": seafood,
     }
